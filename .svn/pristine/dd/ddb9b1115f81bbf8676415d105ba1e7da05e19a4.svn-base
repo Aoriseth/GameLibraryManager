@@ -1,0 +1,239 @@
+import org.xml.sax.InputSource;
+import org.w3c.dom.*;
+
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+class Game implements Serializable
+{
+    private final String FolderName;
+    private String GameTitle;
+    private String ID;
+    private String Deck;
+    private String cover;
+    final String directory;
+    String saveLocation = "";
+    private String size;
+    private File exe;
+
+    public Game(String FolderName, String directory)
+    {
+        this.directory = directory;
+        this.FolderName = FolderName;
+        getInfo();
+
+        String[] temp = null;
+        if(ID != null) {
+			new Database_controller();
+			temp = Database_controller.showDatabaseContent(Long.parseLong(ID), directory);
+		}
+        if(temp == null)
+            exe = new File(directory);
+        else {
+            exe = new File(directory + temp[0]);
+            saveLocation = temp[1];
+        }
+    }
+
+    private String getInternetData(String url)
+    {
+        try
+        {
+            URL obj = new URL(url);
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+
+            con.setRequestMethod("GET");
+            con.setRequestProperty("User-Agent", "GameManager");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuilder response = new StringBuilder();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+            //System.out.println(response.toString());
+            return response.toString();
+        }
+        catch(Exception x)
+        {
+            return x.toString();
+        }
+
+    }
+
+    public void getInfo()
+    {
+        long temp;
+        temp = folderSize(new File(directory));
+
+        if(temp < 1000)
+        {
+            size = temp + " B";
+        }
+        if(temp < 1000000 && temp >= 1000)
+        {
+            temp = Math.round(temp/10.00);
+            size = (temp / 100.00) + " KB";
+        }
+        if(temp < 1000000000 && temp >= 1000000)
+        {
+            temp = Math.round(temp/10000.00);
+            size = (temp / 100.00) + " MB";
+        }
+        if(temp >= 1000000000)
+        {
+            temp = Math.round(temp/10000000.00);
+            size = (temp / 100.00) + " GB";
+        }
+
+        String xml;
+
+        xml = getInternetData("http://www.giantbomb.com/api/search/?api_key=f762f684241dc2aee6ba170cfe09e31165a39a44&format=xml&query=" + FolderName + "&resources=game&field_list=name,id,deck,image");
+
+        try
+        {
+            DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            InputSource is = new InputSource();
+            is.setCharacterStream(new StringReader(xml));
+
+            Document doc = db.parse(is);
+            NodeList nodes = doc.getElementsByTagName("game");
+
+            for (int i = 0; i < 1; i++) {
+                Element element = (Element) nodes.item(i);
+
+                NodeList name = element.getElementsByTagName("name");
+                Element line = (Element) name.item(0);
+
+                GameTitle = getCharacterDataFromElement(line);
+
+                name = element.getElementsByTagName("id");
+                line = (Element) name.item(0);
+
+                ID = getCharacterDataFromElement(line);
+
+                name = element.getElementsByTagName("deck");
+                line = (Element) name.item(0);
+
+                Deck = getCharacterDataFromElement(line);
+
+                name = element.getElementsByTagName("small_url");
+                line = (Element) name.item(0);
+
+                cover = getCharacterDataFromElement(line);
+
+                savepicture();
+
+            }
+        }
+        catch (Exception x)
+        {
+            Thread.currentThread().getStackTrace();
+        }
+
+    }
+    private static String getCharacterDataFromElement(Element e) {
+        Node child = e.getFirstChild();
+        if (child instanceof CharacterData) {
+            CharacterData cd = (CharacterData) child;
+            return cd.getData();
+        }
+        return "";
+    }
+
+    public String getImage()
+    {
+        return cover;
+    }
+
+    public String getGameTitle()
+    {
+    	if(GameTitle == null)
+        {
+    		return "Unknown Game";
+    	}
+        return GameTitle;
+    }
+
+    public String getID()
+    {
+        return ID;
+    }
+
+    public void savepicture()
+    {
+        new SaveData().savepicture(cover, ID);
+    }
+
+    public String getFolderName()
+    {
+        return FolderName;
+    }
+
+    public String getDescription()
+    {
+        return Deck;
+    }
+
+    public File getExe()
+    {
+        return exe;
+    }
+
+    public String getSaveLocation()
+    {
+        return saveLocation;
+    }
+
+    public void setDeck(String Deck)
+    {
+        this.Deck = Deck;
+    }
+
+    public void setGameTitle(String GameTitle)
+    {
+        this.GameTitle = GameTitle;
+    }
+
+    public void setCover(String cover)
+    {
+        this.cover = cover;
+    }
+
+    public void setExe(String path)
+    {
+        exe = new File(path);
+
+        String temp = path.substring(directory.length());
+        Database_controller.editContent(Long.parseLong(ID), temp, saveLocation, directory);
+    }
+
+    public void setSaveLocation(String saveLocation)
+    {
+        this.saveLocation = saveLocation;
+    }
+
+    private static long folderSize(File directory) {
+        long length = 0;
+        if(directory.listFiles()!=null){
+            for (File file : directory.listFiles()) {
+                if (file.isFile())
+                    length += file.length();
+                else
+                    length += folderSize(file);
+            }
+        }
+        return length;
+    }
+
+    public String getSize()
+    {
+        return size;
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sqljdbc4"/>
+	<classpathentry kind="lib" path="C:/Users/Lennart/SkyDrive/B-School/SoftDev/Drivers/Microsoft JDBC Driver 4.0 for SQL Server/sqljdbc_4.0/enu/sqljdbc4.jar"/>
+	<classpathentry kind="output" path="out/production/GameManager"/>
+</classpath>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0"
+            prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="SetupController">
+    <ImageView fitHeight="291.0" fitWidth="679.0" layoutX="67.0" layoutY="-174.0" pickOnBounds="true"
+               AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+               AnchorPane.topAnchor="0.0">
+        <Image url="@purple.png"/>
+    </ImageView>
+   <Button fx:id="Start" layoutX="504.0" layoutY="81.0" mnemonicParsing="false" onAction="#HandleStart"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="39.0"
+           prefWidth="68.0" style="-fx-background-color: #610B5E;" text="Add" textFill="WHITE"
+           AnchorPane.rightAnchor="107.0">
+       <font>
+           <Font name="System Bold" size="14.0"/>
+       </font>
+       <effect>
+           <DropShadow/>
+       </effect>
+   </Button>
+   <ProgressBar fx:id="progress" layoutX="22.0" layoutY="100.0" prefHeight="31.0" prefWidth="546.0" progress="0.0"
+                AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0"/>
+   <Label layoutX="22.0" layoutY="82.0" text="Path" textFill="WHITE">
+       <font>
+           <Font name="System Bold" size="20.0"/>
+       </font>
+       <effect>
+           <DropShadow/>
+       </effect>
+   </Label>
+   <TextField fx:id="Path" layoutX="122.0" layoutY="81.0" onAction="#HandleStart" prefHeight="31.0" prefWidth="348.0"/>
+   <Label fx:id="gameName" layoutX="22.0" layoutY="75.0" textFill="WHITE" AnchorPane.bottomAnchor="60.0"
+          AnchorPane.leftAnchor="22.0">
+       <font>
+           <Font name="System Bold" size="18.0"/>
+       </font>
+       <effect>
+           <DropShadow/>
+       </effect>
+   </Label>
+   <Button fx:id="Open" layoutX="589.0" layoutY="81.0" mnemonicParsing="false" onAction="#HandleOpen"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="39.0"
+           prefWidth="68.0" style="-fx-background-color: #610B5E;" text="Open" textFill="WHITE"
+           AnchorPane.rightAnchor="22.0">
+       <font>
+           <Font name="System Bold" size="14.0"/>
+       </font>
+       <effect>
+           <DropShadow/>
+       </effect>
+   </Button>
+   <ComboBox fx:id="librarySelect" layoutX="122.0" layoutY="149.0" prefHeight="39.0" prefWidth="348.0"/>
+   <Button fx:id="removeLibrary" layoutX="504.0" layoutY="149.0" mnemonicParsing="false" onAction="#HandleRemoveLibrary"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="39.0"
+           prefWidth="68.0" style="-fx-background-color: #610B5E;" text="Remove" textFill="WHITE"
+           AnchorPane.rightAnchor="108.0">
+       <font>
+           <Font name="System Bold" size="13.0"/>
+       </font>
+       <effect>
+           <DropShadow/>
+       </effect>
+   </Button>
+   <Label layoutX="25.0" layoutY="153.0" text="Libraries" textFill="WHITE" AnchorPane.leftAnchor="25.0"
+          AnchorPane.topAnchor="153.0">
+       <font>
+           <Font name="System Bold" size="20.0"/>
+       </font>
+       <effect>
+           <DropShadow/>
+       </effect>
+   </Label>
+   <Pane fx:id="grabBar" layoutX="177.0" layoutY="-162.0" prefHeight="72.0" prefWidth="679.0"
+         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+   <Button fx:id="Close1" layoutX="628.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity"
+           minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClose"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="30.0"
+           prefWidth="30.0" style="-fx-background-color: #610B5E;" text="X" textFill="WHITE">
+       <effect>
+           <DropShadow/>
+       </effect>
+       <font>
+           <Font name="System Bold" size="20.0"/>
+       </font>
+       <padding>
+           <Insets left="1.0" right="1.0"/>
+       </padding>
+   </Button>
+   <Button fx:id="updateLibrary" layoutX="589.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleUpdateLibrary"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="39.0"
+           prefWidth="68.0" style="-fx-background-color: #610B5E;" text="Update" textFill="WHITE">
+       <effect>
+           <DropShadow/>
+       </effect>
+       <font>
+           <Font name="System Bold" size="13.0"/>
+       </font>
+   </Button>
+</AnchorPane>

@@ -1,0 +1,31 @@
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
+
+public class SetupController
+{
+    private Main mainApp;
+
+    @FXML
+    private ProgressBar progress = new ProgressBar(0.6);
+
+    @FXML
+    private Button Start;
+
+    @FXML
+    private Button Cancle;
+
+    @FXML
+    private TextField Path;
+
+    public SetupController()
+    {
+
+    }
+
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
+
+}

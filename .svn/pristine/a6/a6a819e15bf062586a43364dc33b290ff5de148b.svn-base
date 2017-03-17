@@ -1,0 +1,55 @@
+import javafx.scene.control.Alert;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.ObjectOutputStream;
+import java.io.FileOutputStream;
+import java.net.URL;
+import java.util.ArrayList;
+
+class SaveData {
+
+    public void save(ArrayList<Game> games)
+    {
+        try
+        {
+            FileOutputStream dout = new FileOutputStream("SaveData\\Data.ser");
+            ObjectOutputStream Oout = new ObjectOutputStream(dout);
+            Oout.writeObject(games);
+            Oout.close();
+        }
+        catch (Exception x)
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText("Unable to save library");
+            alert.setContentText(x.toString());
+            alert.showAndWait();
+        }
+    }
+
+    public void savepicture(String image, String ID)
+    {
+        try
+        {
+            BufferedImage cover;
+            File out = new File("SaveData\\" + ID  + ".png");
+
+            if(!out.exists())
+            {
+                cover = ImageIO.read(new URL(image));
+                ImageIO.write(cover, "png", out);
+            }
+        }
+        catch(Exception x)
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText("Unable to save cover picture");
+            alert.setContentText(x.toString());
+            alert.showAndWait();
+        }
+    }
+
+}

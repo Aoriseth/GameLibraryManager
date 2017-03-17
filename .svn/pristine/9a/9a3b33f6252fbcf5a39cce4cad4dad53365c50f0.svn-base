@@ -1,0 +1,45 @@
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+
+
+public class SearchMove_controller {
+
+
+    private Stage dialogStage;
+    private MainMenuController parent;
+
+    @FXML
+    private TextField query;
+
+    @FXML
+    private ImageView searchbutton;
+
+    @FXML
+    private Button Close;
+
+    public void setParent(MainMenuController parent)
+    {
+        this.parent = parent;
+    }
+
+    public void setDialogStage(Stage dialogStage)
+    {
+        this.dialogStage = dialogStage;
+    }
+
+    @FXML
+    public void handleSearch()
+    {
+        parent.Search(query.getText());
+        dialogStage.close();
+    }
+
+    @FXML
+    public void handleClose()
+    {
+        dialogStage.close();
+    }
+}

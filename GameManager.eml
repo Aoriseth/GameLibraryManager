@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="openjfx-dialogs-1.0.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/src/openjfx-dialogs-1.0.2.jar!/"/>
+	</lib>
+	<levels>
+		<level name="sqljdbc4" value="project"/>
+	</levels>
+</component>

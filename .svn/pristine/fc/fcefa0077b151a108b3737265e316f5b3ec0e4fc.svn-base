@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Game Library Manager">
+    <output-path>$PROJECT_DIR$/out/artifacts/Game_Library_Manager</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="description" value="" />
+        <option name="height" value="1024" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="Game Library Manager" />
+        <option name="vendor" value="Groep T" />
+        <option name="width" value="1280" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Game Library Manager.jar">
+        <element id="module-output" name="GameManager" />
+      </element>
+      <element id="library" level="project" name="sqljdbc4" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0"
+            prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ComparisonController">
+   <ImageView fitHeight="548.0" fitWidth="679.0" layoutX="67.0" layoutY="-174.0" pickOnBounds="true"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+      <Image url="@purple.png"/>
+   </ImageView>
+   <Pane fx:id="grabBar" layoutX="177.0" layoutY="-162.0" prefHeight="62.0" prefWidth="679.0"
+         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+   <TableView fx:id="table" layoutX="19.0" layoutY="202.0" prefHeight="332.0" prefWidth="642.0">
+      <columns>
+         <TableColumn fx:id="PlayerColumn" prefWidth="166.0" text="Player"/>
+         <TableColumn fx:id="GameColumn" prefWidth="475.0" text="Game Name"/>
+      </columns>
+   </TableView>
+   <Button fx:id="Search" layoutX="439.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleCompare"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="38.0"
+           prefWidth="210.0" style="-fx-background-color: #610B5E;" text="Search" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+      <effect>
+         <DropShadow/>
+      </effect>
+   </Button>
+   <Button fx:id="Upload" layoutX="439.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleUpload"
+           onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="38.0"
+           prefWidth="210.0" style="-fx-background-color: #610B5E;" text="Upload Library" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+      <effect>
+         <DropShadow/>
+      </effect>
+   </Button>
+   <Text fill="WHITE" layoutX="42.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+      <font>
+         <Font name="System Bold" size="18.0"/>
+      </font>
+      <effect>
+         <DropShadow/>
+      </effect>
+   </Text>
+   <TextField fx:id="Name" layoutX="152.0" layoutY="76.0" onAction="#handleUpload" prefHeight="38.0" prefWidth="265.0"/>
+   <ComboBox fx:id="Gamelist" layoutX="152.0" layoutY="140.0" prefHeight="38.0" prefWidth="265.0"/>
+   <Text fill="WHITE" layoutX="39.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Title">
+      <effect>
+         <DropShadow/>
+      </effect>
+      <font>
+         <Font name="System Bold" size="18.0"/>
+      </font>
+   </Text>
+   <Button fx:id="Close" layoutX="629.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClose" onMouseEntered="#handlehover"
+           onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="30.0" prefWidth="30.0"
+           style="-fx-background-color: #610B5E;" text="X" textFill="WHITE">
+      <effect>
+         <DropShadow/>
+      </effect>
+      <font>
+         <Font name="System Bold" size="20.0"/>
+      </font>
+      <padding>
+         <Insets left="1.0" right="1.0"/>
+      </padding>
+   </Button>
+</AnchorPane>

@@ -1,0 +1,611 @@
+import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.concurrent.Task;
+import javafx.event.*;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.InnerShadow;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+
+import java.awt.*;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.EventObject;
+
+public class MainMenuController extends Thread {
+
+    @FXML
+    private Button cover1;
+    @FXML
+    private Button cover2;
+    @FXML
+    private Button cover3;
+    @FXML
+    private Button cover4;
+    @FXML
+    private Button cover5;
+    @FXML
+    private Button cover6;
+    @FXML
+    private Button cover7;
+    @FXML
+    private Button cover8;
+    @FXML
+    private Button cover9;
+    @FXML
+    private Button cover10;
+
+    @FXML
+    private Button minimize;
+
+    @FXML
+    private Button left;
+
+    @FXML
+    private Button right;
+
+    @FXML
+    private ImageView background;
+
+    @FXML
+    private AnchorPane overlay;
+
+    @FXML
+    private ImageView DetailCover;
+
+    @FXML
+    private Label Description;
+
+    @FXML
+    private GridPane list;
+
+    @FXML
+    private Label Gametitle;
+
+    @FXML
+    private Button DetailsPrevious;
+
+    @FXML
+    private Button DetailsNext;
+
+    @FXML
+    private TextField Target;
+
+    @FXML
+    private TextField SaveLocation;
+
+    @FXML
+    private Button GoTarget;
+
+    @FXML
+    private Button GoSaveLocation;
+
+    @FXML
+    private Button DetailEdit;
+
+    @FXML
+    private Button DetailsBack;
+
+    @FXML
+    private Button DetailsRemove;
+
+    @FXML
+    private TextArea EditDeck;
+
+    @FXML
+    private TextField EditGameTitle;
+
+    @FXML
+    private TextField EditImageURL;
+
+    @FXML
+    private Label ImageURL;
+
+    @FXML
+    private Button LaunchGames;
+
+    @FXML
+    private Label size;
+
+    @FXML
+    private Slider page;
+
+    @FXML
+    private Label pagenumber;
+
+
+    Main mainApp;
+    Button[] covers;
+    SaveData datasaver = new SaveData();
+    ArrayList<Game> games = new ArrayList<Game>();
+    int currentpage=0, pages = 0, SelectedGameindex = 0;
+    boolean DetailEditMode = false;
+    Game SelectedGame;
+
+    public boolean newgame(String foldername)
+    {
+        for(int i = 0; i< this.games.size(); i++)
+        {
+            if(foldername.equals(games.get(i).getFolderName()))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void setData(ArrayList<Game> games)
+    {
+        for(int i = 0; i<games.size(); i++)
+        {
+            if (games.get(i).getImage() == null)
+            {
+                games.remove(i);
+                i--;
+            }
+        }
+
+        this.games.addAll(games);
+        pages = (int) Math.ceil(((this.games.size()+1)/10.0)-1);
+        if (currentpage < pages)
+        {
+            right.setVisible(true);
+        }
+        page.setMax(pages);
+        setImages();
+        datasaver.save(this.games);
+    }
+
+    public void task(int i)
+    {
+        Image cover;
+
+        if(i < games.size())
+        {
+            File in = new File("SaveData\\" + this.games.get(i).getID() + ".png");
+
+            if(in.exists())
+            {
+                cover = new Image(in.toURI().toString());
+            }
+            else
+            {
+                this.games.get(i).savepicture();
+                cover = new Image(in.toURI().toString());
+            }
+
+        }
+        else
+        {
+            cover = new Image("deep_purple.png");
+        }
+
+        if((i - (currentpage * 10))<covers.length && i+1 > currentpage*10) {
+            Platform.runLater(()->this.loadimages(cover, i));
+        }
+    }
+
+    public void loadimages(Image cover,int i)
+    {
+        covers[(i - (currentpage * 10))].setBackground(new Background(new BackgroundImage(cover, BackgroundRepeat.SPACE, BackgroundRepeat.SPACE, BackgroundPosition.CENTER, new BackgroundSize(225, 310, false, false, false, false))));
+    }
+
+    public void setImages()
+    {
+        page.setValue(currentpage);
+
+        if(!DetailEditMode)
+            pagenumber.setText("Page " + (currentpage+1) + " from " + (pages+1));
+
+        cover1.setVisible(false);
+        cover2.setVisible(false);
+        cover3.setVisible(false);
+        cover4.setVisible(false);
+        cover5.setVisible(false);
+        cover6.setVisible(false);
+        cover7.setVisible(false);
+        cover8.setVisible(false);
+        cover9.setVisible(false);
+        cover10.setVisible(false);
+
+        Parallel_executer[] execute = new Parallel_executer[10];
+
+        for(int i = currentpage*10; i<games.size()+1 && i<(currentpage*10 + 10); i++)
+        {
+            covers[(i - (currentpage * 10))].setVisible(true);
+            execute[i-(currentpage*10)] = new Parallel_executer(this, i);
+        }
+
+    }
+
+    public void setMainApp(Main mainApp) {
+        covers = new Button[]{cover1, cover2, cover3, cover4, cover5, cover6, cover7, cover8, cover9, cover10};
+        this.mainApp = mainApp;
+        background.setImage(new Image("SKINDEFAULT.jpg"));
+        cover1.setVisible(true);
+        cover1.setBackground(new Background(new BackgroundImage(new Image("deep_purple.png"), BackgroundRepeat.SPACE, BackgroundRepeat.SPACE, BackgroundPosition.CENTER, new BackgroundSize(229, 310, false, false, false, false))));
+        left.setVisible(false);
+        right.setVisible(false);
+        overlay.setVisible(false);
+        loadsave();
+        page.valueProperty().addListener(new ChangeListener<Number>() {
+            public void changed(ObservableValue<? extends Number> ov,
+                                Number old_val, Number new_val)
+            {
+                currentpage = (int) Math.round(new_val.doubleValue());
+                if(currentpage == pages)
+                {
+                    right.setVisible(false);
+                }
+                if (currentpage > 0)
+                {
+                    left.setVisible(true);
+                }
+                if(currentpage == 0)
+                {
+                    left.setVisible(false);
+                }
+                if(currentpage < pages)
+                {
+                    right.setVisible(true);
+                }
+                if(Math.round(new_val.doubleValue()) != Math.round(old_val.doubleValue()))
+                    setImages();
+            }
+        });
+
+    }
+
+    private void ShowDetails(int button)
+    {
+        if(!DetailEditMode)
+        {
+            SelectedGame = games.get(button + (currentpage * 10));
+            SelectedGameindex = button + (currentpage * 10);
+
+            pagenumber.setText("Game " + (SelectedGameindex+1) + " from " + games.size());
+
+            if(SelectedGame.getSize()!= null)
+                size.setText("Size: " + SelectedGame.getSize());
+
+            if (SelectedGameindex == 0)
+                DetailsPrevious.setDisable(true);
+            else
+                DetailsPrevious.setDisable(false);
+
+            if (SelectedGameindex == (games.size() - 1))
+                DetailsNext.setDisable(true);
+            else
+                DetailsNext.setDisable(false);
+
+            DetailsBack.setDisable(false);
+
+            list.setVisible(false);
+            left.setVisible(false);
+            right.setVisible(false);
+
+            Image temp;
+            File in = new File("SaveData\\" + SelectedGame.getID() + ".png");
+
+            if (in.exists()) {
+                temp = new Image(in.toURI().toString());
+            } else {
+                SelectedGame.savepicture();
+                temp = new Image(in.toURI().toString());
+            }
+
+            if((Target.getText()+SaveLocation.getText()+EditGameTitle.getText()+EditImageURL.getText()+EditDeck.getText()).equals("")) {
+                EditImageURL.setText(SelectedGame.getImage());
+                EditDeck.setText(SelectedGame.getDeck());
+                EditGameTitle.setText(SelectedGame.getGameTitle());
+            }
+            else
+            {
+                SelectedGame.setCover(EditImageURL.getText());
+                SelectedGame.setDeck(EditDeck.getText());
+                SelectedGame.setGameTitle(EditGameTitle.getText());
+                SelectedGame.setSaveLocation(SaveLocation.getText());
+                SelectedGame.setExe(Target.getText());
+                datasaver.save(games);
+            }
+
+
+            Target.setText(SelectedGame.getExe().toString());
+            if (SelectedGame.saveLocation != null)
+                SaveLocation.setText(SelectedGame.getSaveLocation());
+            DetailCover.setImage(temp);
+            Description.setText(SelectedGame.getDeck());
+            Gametitle.setText(SelectedGame.getGameTitle());
+
+            overlay.setVisible(true);
+            GoTarget.setDisable(false);
+            GoSaveLocation.setDisable(false);
+            LaunchGames.setDisable(false);
+
+            File test = new File(Target.getText());
+
+            if (!test.exists())
+                GoTarget.setDisable(true);
+
+            if(!test.isFile())
+                LaunchGames.setDisable(true);
+
+            test = new File(SaveLocation.getText());
+            if (!test.exists()) {
+                GoSaveLocation.setDisable(true);
+            }
+
+            DetailEdit.setText("Edit Data");
+            DetailsRemove.setText("Remove");
+            Target.setDisable(true);
+            SaveLocation.setDisable(true);
+            ImageURL.setVisible(false);
+            EditImageURL.setVisible(false);
+            EditDeck.setVisible(false);
+            EditGameTitle.setVisible(false);
+            page.setVisible(false);
+        }
+        else
+        {
+            page.setVisible(true);
+            DetailsBack.setDisable(true);
+            DetailsNext.setDisable(true);
+            DetailsPrevious.setDisable(true);
+            DetailEdit.setText("Done");
+            Target.setDisable(false);
+            SaveLocation.setDisable(false);
+            DetailsRemove.setText("Reset");
+            ImageURL.setVisible(true);
+            EditImageURL.setVisible(true);
+            EditDeck.setVisible(true);
+            EditGameTitle.setVisible(true);
+
+
+        }
+    }
+
+    public MainMenuController()
+    {
+    }
+
+    public void loadsave()
+    {
+        try
+        {
+            InputStream in = new FileInputStream("SaveData\\Data.ser");
+            InputStream buffer = new BufferedInputStream(in);
+            ObjectInput input = new ObjectInputStream(buffer);
+
+            try
+            {
+                ArrayList<Game> temp = (ArrayList<Game>) input.readObject();
+                setData(temp);
+            }
+            catch (ClassNotFoundException c)
+            {
+
+            }
+
+        }
+        catch (IOException x)
+        {
+
+        }
+
+    }
+
+    public void cleanup()
+    {
+        for(int i = 0; i<games.size(); i++)
+        {
+            if(!new File(games.get(i).directory).exists())
+            {
+                File f = new File("SaveData\\" + this.games.get(i).getID() + ".png");
+                f.delete();
+                games.remove(i);
+            }
+        }
+        setImages();
+        datasaver.save(this.games);
+    }
+
+    //De handlers voor de GUI staren hier
+    @FXML
+    public void handlecover(final ActionEvent event)
+    {
+        Target.setText("");
+        SaveLocation.setText("");
+        EditDeck.setText("");
+        EditGameTitle.setText("");
+        EditImageURL.setText("");
+
+
+        for(int i = 0; i<covers.length; i++) {
+            if (event.getSource().equals(covers[i])) {
+
+                if (games.size() == i + (currentpage * 10)) {
+                    mainApp.showSetup();
+                } else {
+                    ShowDetails(i);
+                }
+            }
+        }
+    }
+
+    @FXML
+    public void handleclose()
+    {
+        System.exit(1);
+    }
+
+    @FXML
+    public void handleminimize()
+    {
+        Stage stage=(Stage) minimize.getScene().getWindow();
+        stage.setIconified(true);
+    }
+
+    @FXML
+    public void handleleft()
+    {
+        currentpage--;
+        if(currentpage == 0)
+        {
+            left.setVisible(false);
+        }
+        if(currentpage < pages)
+        {
+            right.setVisible(true);
+        }
+
+        setImages();
+    }
+
+    @FXML
+    public void handleright()
+    {
+        double temp;
+        currentpage++;
+        if(currentpage == pages)
+        {
+            right.setVisible(false);
+        }
+        if (currentpage > 0)
+        {
+            left.setVisible(true);
+        }
+        setImages();
+    }
+
+    @FXML
+    public void handlecleanup()
+    {
+        cleanup();
+    }
+
+    @FXML
+    public void handleDetailNext()
+    {
+        Target.setText("");
+        SaveLocation.setText("");
+        EditDeck.setText("");
+        EditGameTitle.setText("");
+        EditImageURL.setText("");
+        ShowDetails(SelectedGameindex+1-(currentpage*10));
+    }
+
+    @FXML
+    public void handleDetailPrevious()
+    {
+        Target.setText("");
+        SaveLocation.setText("");
+        EditDeck.setText("");
+        EditGameTitle.setText("");
+        EditImageURL.setText("");
+        ShowDetails(SelectedGameindex - 1 - (currentpage * 10));
+    }
+
+    @FXML
+    public void handleDetailBack()
+    {
+        overlay.setVisible(false);
+        list.setVisible(true);
+        right.setVisible(true);
+        left.setVisible(false);
+        page.setVisible(true);
+        currentpage = (int) Math.ceil((SelectedGameindex+1)/10.0)-1;
+        setImages();
+        if(currentpage == pages)
+        {
+            right.setVisible(false);
+        }
+        if (currentpage > 0)
+        {
+            left.setVisible(true);
+        }
+        if(currentpage == 0)
+        {
+            left.setVisible(false);
+        }
+        if(currentpage < pages)
+        {
+            right.setVisible(true);
+        }
+    }
+
+    @FXML
+    public void handleDetailRemove()
+    {
+        if(DetailEditMode)
+        {
+            SelectedGame.getInfo();
+            DetailEditMode = false;
+            Target.setText("");
+            SaveLocation.setText("");
+            EditDeck.setText("");
+            EditGameTitle.setText("");
+            EditImageURL.setText("");
+            ShowDetails(SelectedGameindex-(currentpage*10));
+            DetailEditMode = true;
+        }
+        else
+            games.remove(SelectedGameindex);
+        ShowDetails(SelectedGameindex-1-(currentpage*10));
+    }
+
+    @FXML
+    public void handleDetailEdit()
+    {
+        DetailEditMode = !DetailEditMode;
+        ShowDetails(SelectedGameindex-(currentpage*10));
+
+    }
+
+    @FXML
+    public void handleGoTarget()
+    {
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.open(new File(SelectedGame.getExe().getParent()));
+        }catch (IOException x)
+        {
+
+        }
+    }
+
+    @FXML
+    public void handleLaunchGame()
+    {
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.open(SelectedGame.getExe());
+        }catch (IOException x)
+        {
+
+        }
+    }
+
+    @FXML
+    public void handleGoSaveLocation()
+    {
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.open(new File(SelectedGame.getSaveLocation()));
+        }catch (IOException x)
+        {
+        }
+    }
+}

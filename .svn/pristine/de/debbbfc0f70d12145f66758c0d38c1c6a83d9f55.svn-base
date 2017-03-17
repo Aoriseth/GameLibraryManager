@@ -1,0 +1,21 @@
+import javafx.beans.property.SimpleStringProperty;
+
+public class Compare {
+
+	final SimpleStringProperty name;
+	final SimpleStringProperty gameName;
+	public Compare(String string, String string2) {
+		// TODO Auto-generated constructor stub
+		name = new SimpleStringProperty(string);
+		gameName = new SimpleStringProperty(string2);
+	}
+
+	public String getName(){
+		return name.get();
+	}
+	
+	public String getGameName(){
+		return gameName.get();
+	}
+	
+}

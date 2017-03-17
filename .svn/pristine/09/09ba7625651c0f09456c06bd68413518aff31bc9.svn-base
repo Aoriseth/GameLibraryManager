@@ -1,0 +1,50 @@
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
+
+public class SetupController
+{
+    private Main mainApp;
+    private GameScanner scan;
+
+    @FXML
+    ProgressBar progress = new ProgressBar();
+
+    @FXML
+    private Button Start;
+
+    @FXML
+    private Button Cancle;
+
+    @FXML
+    private TextField Path;
+
+    public SetupController()
+    {
+
+    }
+
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
+
+    @FXML
+    private void HandleStart()
+    {
+        scan = new GameScanner(Path.getText(), this);
+    }
+
+    public void SetProgress(float percent)
+    {
+        System.out.println(percent/100);
+        progress.setProgress(percent/100);
+    }
+
+    @FXML
+    private void HandleCancel()
+    {
+        System.exit(0);
+    }
+
+}

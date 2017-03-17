@@ -1,0 +1,111 @@
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.File;
+
+public class SetupController extends Thread
+{
+    private GameScanner scan;
+    private MainMenuController parent;
+    private Thread th;
+
+    @FXML
+    private ProgressBar progress = new ProgressBar();
+
+    @FXML
+    private Button Start = new Button();
+
+    @FXML
+    private Button Close;
+    
+    @FXML
+    private Label gameName;
+
+    @FXML
+    private TextField Path;
+    private Stage dialogStage;
+
+    public SetupController()
+    {
+    }
+
+    public void setParent(MainMenuController parent)
+    {
+        this.parent = parent;
+    }
+
+    public void setDialogStage(Stage dialogStage)
+    {
+        this.dialogStage = dialogStage;
+    }
+
+    @FXML
+    private void HandleStart()
+    {
+        File f = new File(Path.getText());
+
+        if (f.exists())
+        {
+            DisableStartButton();
+            DisablePath();
+            th = new Thread(this, "Game Scanner");
+            th.start();
+            th.interrupt();
+        }
+        else
+        {
+            System.out.println("Path not found");
+        }
+
+    }
+
+    public void SetProgress(float percent)
+    {
+        System.out.println(percent/100);
+        progress.setProgress(percent/100);
+    }
+
+    @FXML
+    private void HandleCancel()
+    {
+        if(scan != null)
+            parent.setImages(scan.getGames());
+        dialogStage.close();
+    }
+
+    public void run()
+    {
+        scan = new GameScanner(Path.getText(), this);
+
+    }
+
+    @FXML
+    public void EnableStartButton()
+    {
+        Start.setDisable(false);
+    }
+
+    public void DisableStartButton()
+    {
+        Start.setDisable(true);
+    }
+
+    public void EnablePath()
+    {
+        Path.setDisable(false);
+    }
+
+    public void DisablePath()
+    {
+        Path.setDisable(true);
+    }
+
+	public void SetGame(String string) {
+		// TODO Auto-generated method stub
+		gameName.setText("Found " + string);
+	}
+}

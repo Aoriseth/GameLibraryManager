@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\SaveData\38788.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SaveData/Data.ser" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database_controller.java" afterPath="$PROJECT_DIR$/src/Database_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainMenuController.java" afterPath="$PROJECT_DIR$/src/MainMenuController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegistryReader.java" afterPath="$PROJECT_DIR$/src/RegistryReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="996f88d9-e6de-4319-8b7e-c812845f33a5" name="Failed commit: Default" comment="Nieuwe files voor de gui" />
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Database_controller.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Database_controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7037037" vertical-offset="680" max-vertical-offset="1989">
+              <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+              <folding>
+                <element signature="method#LoadTheDriver#0;class#Database_controller#0" expanded="false" />
+                <element signature="method#addContent#0;class#Database_controller#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistryReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RegistryReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1071">
+              <caret line="26" column="89" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1470#1471#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3145">
+              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+              <folding>
+                <element signature="method#folderSize#0;class#Game#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenuController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainMenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2679" max-vertical-offset="5117">
+              <caret line="313" column="61" selection-start-line="313" selection-start-column="61" selection-end-line="313" selection-end-column="61" />
+              <folding>
+                <element signature="method#newgame#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#setData#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#setImages#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#setMainApp#0;class#MainMenuController#0" expanded="false" />
+                <element signature="class#5571:6439" expanded="false" />
+                <element signature="method#changed#0;class#5571:6439" expanded="false" />
+                <element signature="method#MainMenuController#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#loadsave#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#cleanup#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handlecover#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleminimize#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleleft#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleright#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleDetailNext#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleDetailPrevious#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleDetailBack#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleDetailRemove#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleDetailEdit#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleGoTarget#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleLaunchGame#0;class#MainMenuController#0" expanded="false" />
+                <element signature="method#handleGoSaveLocation#0;class#MainMenuController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/GameScannerTest.java" />
+        <option value="$PROJECT_DIR$/src/view/Setup.fxml" />
+        <option value="$PROJECT_DIR$/src/Program/Main.java" />
+        <option value="$PROJECT_DIR$/src/view/Controllers/SetupController.java" />
+        <option value="$PROJECT_DIR$/src/view/SetupController.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/SetupController.java" />
+        <option value="$PROJECT_DIR$/src/GameScanner.java" />
+        <option value="$PROJECT_DIR$/src/SaveData.java" />
+        <option value="$PROJECT_DIR$/src/MainMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/MainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/RegistryReader.java" />
+        <option value="$PROJECT_DIR$/src/Database_controller.java" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1552" />
+    <option name="height" value="842" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="vcs.Subversion" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="D:/Program Files (x86)/Microsoft JDBC Driver 4.0 for SQL Server/sqljdbc_4.0/enu/sqljdbc4.jar!/" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager" />
+      <recent name="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\src" />
+      <recent name="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\src\view" />
+      <recent name="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\src\view\Layouts" />
+      <recent name="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\src\Program" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="SetupController" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GameManager" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing" myAutoUpdateAfterCommit="true" cleanupOnStartRun="true">
+    <configuration>C:\Users\Thomas_Meyers\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager" />
+          <option name="myCopyRoot" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\.idea" />
+          <option name="myCopyRoot" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager\.idea" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager" />
+          <option name="myCopyRoot" value="D:\Dropbox\Documents\Groept\Object georienteerd programmeren\GameManager" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1415869293119</created>
+      <updated>1415869293119</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1415869378125</created>
+      <updated>1415869378125</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1415869434125</created>
+      <updated>1415869434125</updated>
+    </task>
+    <task id="LOCAL-00004">
+      <created>1415869881117</created>
+      <updated>1415869881117</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <created>1415872712116</created>
+      <updated>1415872712116</updated>
+    </task>
+    <task id="LOCAL-00006">
+      <created>1415874384151</created>
+      <updated>1415874384151</updated>
+    </task>
+    <task id="LOCAL-00007">
+      <created>1415876138111</created>
+      <updated>1415876138111</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1415879537136</created>
+      <updated>1415879537136</updated>
+    </task>
+    <task id="LOCAL-00009">
+      <created>1415883656181</created>
+      <updated>1415883656182</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Nieuwe game class die informatie van de spelletjes opzoekt en bewaart">
+      <created>1415889096124</created>
+      <updated>1415889096124</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Nieuwe files voor de gui">
+      <created>1415889370132</created>
+      <updated>1415889370132</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Nieuwe files voor de gui">
+      <created>1415974052133</created>
+      <updated>1415974052133</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Nieuwe files voor de gui">
+      <created>1415974571149</created>
+      <updated>1415974571149</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Nieuwe files voor de gui">
+      <created>1415975274118</created>
+      <updated>1415975274118</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Nieuwe files voor de gui">
+      <created>1415983726202</created>
+      <updated>1415983726202</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Nieuwe files voor de gui">
+      <created>1415987532144</created>
+      <updated>1415987532144</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Nieuwe files voor de gui">
+      <created>1416059724189</created>
+      <updated>1416059724189</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Nieuwe files voor de gui">
+      <created>1416085421136</created>
+      <updated>1416085421136</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Nieuwe files voor de gui">
+      <created>1416150449147</created>
+      <updated>1416150449147</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Aanpassingen aan de GUI">
+      <created>1416164859133</created>
+      <updated>1416164859133</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Aanpassingen aan de GUI">
+      <created>1416164919124</created>
+      <updated>1416164919124</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Aanpassingen aan de GUI">
+      <created>1416168038114</created>
+      <updated>1416168038114</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Aanpassingen aan de GUI">
+      <created>1416169904112</created>
+      <updated>1416169904112</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Aanpassingen aan de GUI">
+      <created>1416171437123</created>
+      <updated>1416171437123</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Aanpassingen aan de GUI">
+      <created>1416172086107</created>
+      <updated>1416172086108</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Aanpassingen aan de GUI">
+      <created>1416174370159</created>
+      <updated>1416174370160</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Aanpassingen aan de GUI">
+      <created>1416668370344</created>
+      <updated>1416668370344</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Aanpassingen aan de GUI">
+      <created>1417081641647</created>
+      <updated>1417081641647</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Aanpassingen aan de GUI">
+      <created>1417083020123</created>
+      <updated>1417083020123</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Aanpassingen aan de GUI">
+      <created>1417604017184</created>
+      <updated>1417604017184</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Meerdere pagina's werken, je kan meerdere locaties toevoegen. Games zonder foto worden verwijderd uit de lijst, steam wordt dan niet meer gedetecteerd. Er kunnen ook geen games dubbel worden toegevoegd.">
+      <created>1417608274110</created>
+      <updated>1417608274110</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Data saving ingevoerd, maar nog niet af.">
+      <created>1417687191128</created>
+      <updated>1417687191128</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1417694639260</created>
+      <updated>1417694639260</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418284892171</created>
+      <updated>1418284892171</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418286338142</created>
+      <updated>1418286338142</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418288404106</created>
+      <updated>1418288404106</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418289344122</created>
+      <updated>1418289344122</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418291876107</created>
+      <updated>1418291876108</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418296721262</created>
+      <updated>1418296721262</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418296840142</created>
+      <updated>1418296840142</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418297759107</created>
+      <updated>1418297759107</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418298935107</created>
+      <updated>1418298935107</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418301523403</created>
+      <updated>1418301523403</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418305506127</created>
+      <updated>1418305506127</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418308636184</created>
+      <updated>1418308636184</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418308664210</created>
+      <updated>1418308664210</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418309202108</created>
+      <updated>1418309202108</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418310850134</created>
+      <updated>1418310850134</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418312129149</created>
+      <updated>1418312129149</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418319023140</created>
+      <updated>1418319023140</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418375146147</created>
+      <updated>1418375146148</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418379007108</created>
+      <updated>1418379007108</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418389083118</created>
+      <updated>1418389083118</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418391975120</created>
+      <updated>1418391975120</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418392160117</created>
+      <updated>1418392160117</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418392605114</created>
+      <updated>1418392605114</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418396670122</created>
+      <updated>1418396670122</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen.">
+      <created>1418811821264</created>
+      <updated>1418811821264</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Database laten werken, nog niet af...">
+      <created>1418813932118</created>
+      <updated>1418813932119</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Database laten werken, nog niet af...">
+      <created>1418887793120</created>
+      <updated>1418887793120</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Database laten werken, nog niet af...">
+      <created>1418889900172</created>
+      <updated>1418889900173</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Database laten werken, nog niet af...">
+      <created>1418893620107</created>
+      <updated>1418893620107</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Database laten werken, nog niet af...">
+      <created>1418893687110</created>
+      <updated>1418893687110</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Database laten werken, nog niet af...">
+      <created>1418896691128</created>
+      <updated>1418896691128</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Database laten werken, nog niet af...">
+      <created>1418900369183</created>
+      <updated>1418900369183</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Database laten werken, nog niet af...">
+      <created>1418906689118</created>
+      <updated>1418906689118</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Database laten werken, nog niet af...">
+      <created>1418908265119</created>
+      <updated>1418908265119</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1302000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1552" height="842" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23628692" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32630098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24932976" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29676512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23628692" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24932976" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29957807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32630098" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Nieuwe game class die informatie van de spelletjes opzoekt en bewaart" />
+    <MESSAGE value="Nieuwe files voor de gui" />
+    <MESSAGE value="Aanpassingen aan de GUI" />
+    <MESSAGE value="Meerdere pagina's werken, je kan meerdere locaties toevoegen. Games zonder foto worden verwijderd uit de lijst, steam wordt dan niet meer gedetecteerd. Er kunnen ook geen games dubbel worden toegevoegd." />
+    <MESSAGE value="Data saving ingevoerd, maar nog niet af." />
+    <MESSAGE value="Data saving werk volledig, het programma download alleen nog maar data die hij niet heeft. Het is ook al mogelijk om games die verwijderd zijn van de computer uit de library te halen." />
+    <MESSAGE value="Database laten werken, nog niet af..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Database laten werken, nog niet af..." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1751">
+          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+          <folding>
+            <element signature="method#newgame#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setData#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setImages#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setMainApp#0;class#MainMenuController#0" expanded="false" />
+            <element signature="class#5571:6439" expanded="false" />
+            <element signature="method#changed#0;class#5571:6439" expanded="false" />
+            <element signature="method#MainMenuController#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#loadsave#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#cleanup#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handlecover#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleminimize#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleleft#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleright#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailNext#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailPrevious#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailBack#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailRemove#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailEdit#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleGoTarget#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleLaunchGame#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleGoSaveLocation#0;class#MainMenuController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="1020">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2414">
+          <caret line="126" column="11" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
+          <folding>
+            <element signature="method#folderSize#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="1955">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1717">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="method#newgame#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setData#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setImages#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setMainApp#0;class#MainMenuController#0" expanded="false" />
+            <element signature="class#5571:6439" expanded="false" />
+            <element signature="method#changed#0;class#5571:6439" expanded="false" />
+            <element signature="method#MainMenuController#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#loadsave#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#cleanup#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handlecover#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleminimize#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleleft#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleright#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailNext#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailPrevious#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailBack#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailRemove#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailEdit#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleGoTarget#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleLaunchGame#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleGoSaveLocation#0;class#MainMenuController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="569" max-vertical-offset="1054">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2414">
+          <caret line="126" column="11" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
+          <folding>
+            <element signature="method#folderSize#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="1071">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1037">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="422" max-vertical-offset="1105">
+          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1037">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="867">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1207">
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1037">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1190">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1037">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="867">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="799">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1003">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="799">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1003">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="935">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1003">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="578">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="612">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="884">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="187">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="680">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33184856" vertical-offset="28564" max-vertical-offset="60010">
+          <caret line="1772" column="0" selection-start-line="1772" selection-start-column="0" selection-end-line="1772" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setup.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="683">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/javafx-src.zip!/javafx/scene/layout/BackgroundRepeat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3319149" vertical-offset="48" max-vertical-offset="595">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.506383" vertical-offset="17" max-vertical-offset="1717">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SaveData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="884">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55676854" vertical-offset="408" max-vertical-offset="4335">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85562634" vertical-offset="447" max-vertical-offset="1173">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1220" max-vertical-offset="2669">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33262712" vertical-offset="200" max-vertical-offset="5814">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2679" max-vertical-offset="5117">
+          <caret line="313" column="61" selection-start-line="313" selection-start-column="61" selection-end-line="313" selection-end-column="61" />
+          <folding>
+            <element signature="method#newgame#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setData#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setImages#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#setMainApp#0;class#MainMenuController#0" expanded="false" />
+            <element signature="class#5571:6439" expanded="false" />
+            <element signature="method#changed#0;class#5571:6439" expanded="false" />
+            <element signature="method#MainMenuController#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#loadsave#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#cleanup#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handlecover#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleminimize#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleleft#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleright#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailNext#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailPrevious#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailBack#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailRemove#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleDetailEdit#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleGoTarget#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleLaunchGame#0;class#MainMenuController#0" expanded="false" />
+            <element signature="method#handleGoSaveLocation#0;class#MainMenuController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3145">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+          <folding>
+            <element signature="method#folderSize#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RegistryReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1071">
+          <caret line="26" column="89" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7037037" vertical-offset="680" max-vertical-offset="1989">
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+          <folding>
+            <element signature="method#LoadTheDriver#0;class#Database_controller#0" expanded="false" />
+            <element signature="method#addContent#0;class#Database_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sqljdbc4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>GameManager</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sqljdbc4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

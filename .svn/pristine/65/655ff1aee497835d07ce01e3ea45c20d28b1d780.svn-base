@@ -1,0 +1,91 @@
+import java.io.File;
+import java.util.*;
+
+import javafx.application.Platform;
+
+class GameScanner {
+    private final String directory;
+    private String[] directories;
+    private final ArrayList<Game> Games = new ArrayList<>();
+    private final SetupController controller;
+    private final MainMenuController parent;
+    private float progress;
+    private int activethreads;
+    private int totalthreads;
+
+    public GameScanner(String directory, SetupController controller, MainMenuController parent) //Constructor
+    {
+        this.parent = parent;
+        this.controller = controller;
+        this.directory = directory;
+        ScanDirectory();
+        Gameinfo();
+    }
+
+    private void ScanDirectory() //Maakt een array met de namen van alle bestanden en mappen in de opgegeven directory
+    {
+        File file = new File(directory);
+
+        directories = file.list();
+    }
+
+    public void task(int i)
+    {
+
+
+
+        File f = new File(directory + directories[i]);
+
+        if(f.isDirectory())
+        {
+            String temp = directory + directories[i];
+            directories[i] = directories[i].replace(' ', '.');
+
+            if(parent.newgame(directories[i]))
+            {
+                Game tempgame = new Game(directories[i], temp);
+
+                Boolean added = false;
+
+                while (!added) {
+                    Games.add(tempgame);
+                    for (Game Game : Games) {
+                        try {
+                            if (Game.equals(tempgame))
+                                added = true;
+                        } catch (NullPointerException e) {
+                        }
+                    }
+                }
+                String lastGame = directories[i];
+                Platform.runLater(() -> controller.SetGameName(Games.get(Games.size() - 1).getGameTitle()));
+            }
+
+        }
+        activethreads = activethreads - (i+1);
+        progress =(float) (100.00 - (activethreads * 100.00 / totalthreads));
+        Platform.runLater(() -> controller.SetProgress(progress));
+        Platform.runLater(controller::DisableInterface);
+        if(activethreads == 0)
+        {
+            Platform.runLater(controller::EnableInterface);
+            Platform.runLater(() -> controller.SetGameName("Scan Complete"));
+            if(Games!=null){
+            Platform.runLater(() -> parent.setData(Games));
+            }
+        }
+    }
+
+    private void Gameinfo() {
+
+        Parallel_executer[] execute = new Parallel_executer[directories.length];
+
+        activethreads = (directories.length*(directories.length+1))/2;
+        totalthreads = activethreads;
+
+        for (int i = 0; i < directories.length; i++) {
+            execute[i] = new Parallel_executer(this, i);
+        }
+    }
+
+}

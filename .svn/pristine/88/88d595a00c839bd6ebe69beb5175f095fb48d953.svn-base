@@ -1,0 +1,154 @@
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+import java.sql.*;
+
+public class Database_controller
+{
+    static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+    static String UserDocuments, Appdata, Root, LocalAppdata;
+
+    public static void LoadTheDriver(String driverName)
+    {
+        UserDocuments = RegistryReader.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders", "Personal");
+        Appdata = RegistryReader.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders", "AppData");
+        LocalAppdata = RegistryReader.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders", "Local AppData");
+
+        try
+        {
+            Class.forName(driverName);
+            //System.out.println(driverName + " loaded.");
+        }
+        catch (ClassNotFoundException e)
+        {
+            //System.out.println("*** error loading driver *** \n\t" + e);
+        }
+    }
+
+    public static String[] showDatabaseContent(long Game_ID, String Directory)
+    {
+        LoadTheDriver(driver);
+        Root = Directory;
+
+        String query = "Select Game_ID, Location FROM Game_exe_locations WHERE Game_ID = " + Game_ID;
+        String url = "jdbc:sqlserver://studev.groept.be\\groept";
+        String user= "a14_SD405";
+        String password = "a14_SD405";
+        Connection con = null;
+        Statement st = null;
+        ResultSet rs = null;
+        String temp[];
+
+        try
+        {
+            con = DriverManager.getConnection(url, user, password);
+            //System.out.println("\nUsing driver \"" + DriverManager.getDriver(url).getClass().getName() + "\"\n\n");
+
+            st = con.createStatement();
+            rs = st.executeQuery(query);
+
+            rs.next();
+            temp = new String[] {rs.getString("Location"), rs.getString("Save_location")};
+
+        }
+        catch (SQLException e)
+        {
+            //System.out.println(e);
+            temp = null;
+        }
+        finally
+        {
+            try
+            {
+                if(rs != null)
+                    rs.close();
+            }
+            catch (SQLException e)
+            {
+            }
+        }
+        //if(temp[1].indexOf("UserDocuments")> -1)
+            //temp[1] = UserDocuments + temp[1].substring(temp[1].indexOf("UserDocuments")+13);
+        //if(temp[1].indexOf(Appdata)> -1)
+            temp[1] = "Appdata" + temp[1].substring(Appdata.length());
+        //if(temp[1].indexOf(LocalAppdata)> -1)
+            temp[1] = "LocalAppdata" + temp[1].substring(LocalAppdata.length());
+        //if(temp[1].indexOf(Root)> -1)
+            //temp[1] = "Root" + temp[1].substring(Root.length());
+
+        return temp;
+    }
+
+    public static void addContent(Long Game_ID, String Location, String Save_location)
+    {
+        LoadTheDriver(driver);
+
+
+        String url = "jdbc:sqlserver://studev.groept.be\\groept";
+        String user= "a14_SD405";
+        String password = "a14_SD405";
+        Connection con = null;
+        Statement st = null;
+
+        try
+        {
+            con = DriverManager.getConnection(url, user, password);
+            //System.out.println("\nUsing driver \"" + DriverManager.getDriver(url).getClass().getName() + "\"\n\n");
+
+            st = con.createStatement();
+
+
+            String sql = "INSERT INTO dbo.Game_exe_locations ([Game_ID],[Location], [Save_location]) " + "VALUES (" + Game_ID + ", '" + Location + "', '" + Save_location + "')";
+            st.executeUpdate(sql);
+            st.close();
+        }
+        catch (SQLException e)
+        {
+            //System.out.println(e);
+        }
+    }
+
+    public static void editContent(Long Game_ID, String Location,String Save_location, String Directory)
+    {
+        LoadTheDriver(driver);
+        Root = Directory;
+
+        if(Save_location.indexOf(UserDocuments)> -1)
+            Save_location = "UserDocuments" + Save_location.substring(UserDocuments.length());
+        if(Save_location.indexOf(Appdata)> -1)
+            Save_location = "Appdata" + Save_location.substring(Appdata.length());
+        if(Save_location.indexOf(LocalAppdata)> -1)
+            Save_location = "LocalAppdata" + Save_location.substring(LocalAppdata.length());
+        if(Save_location.indexOf(Root)> -1)
+            Save_location = "Root" + Save_location.substring(Root.length());
+
+        String url = "jdbc:sqlserver://studev.groept.be\\groept";
+        String user= "a14_SD405";
+        String password = "a14_SD405";
+        Connection con = null;
+        Statement st = null;
+        ResultSet rs = null;
+
+        try
+        {
+            con = DriverManager.getConnection(url, user, password);
+            //System.out.println("\nUsing driver \"" + DriverManager.getDriver(url).getClass().getName() + "\"\n\n");
+
+            st = con.createStatement();
+
+            String query = "Select Game_ID, Location FROM Game_exe_locations WHERE Game_ID = " + Game_ID;
+            rs = st.executeQuery(query);
+
+            rs.next();
+            rs.getString("Location");
+
+            String sql = "UPDATE dbo.Game_exe_locations SET [Location] = '" + Location +  "', [Save_location] = '" + Save_location +  "'  WHERE Game_ID = " + Game_ID;
+            st.executeUpdate(sql);
+            st.close();
+        }
+        catch (SQLException e)
+        {
+            addContent(Game_ID, Location, Save_location);
+        }
+    }
+}

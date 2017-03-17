@@ -1,0 +1,109 @@
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.prefs.Preferences;
+
+public class Main extends Application {
+
+    private Stage primaryStage;
+    private AnchorPane Setup, MainMenu;
+    private MainMenuController MainMenu_Controller;
+
+    ArrayList<Game> Games = new ArrayList<Game>();
+
+    @Override
+    public void start(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+        this.primaryStage.setTitle("Games Manager");
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        showMainMenu();
+    }
+
+    public void showSetup()
+    {
+        try
+        {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("Setup.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Find Games");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            // Set the person into the controller.
+            SetupController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setParent(MainMenu_Controller);
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+
+        }
+        catch (IOException x)
+        {
+        }
+
+    }
+
+    public void showMainMenu()
+    {
+        try
+        {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("MainMenu.fxml"));
+            MainMenu = (AnchorPane) loader.load();
+
+            Scene scene = new Scene(MainMenu);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+
+            MainMenu_Controller= loader.getController();
+            MainMenu_Controller.setMainApp(this);
+
+        }
+        catch (IOException x)
+        {
+        }
+    }
+    
+    public File getFilePath(){
+    	Preferences prefs  = Preferences.userNodeForPackage(Main.class);
+    	String filePath = prefs.get("filePath", null);
+    	if(filePath!=null){
+    		return new File(filePath);
+    	}else{
+    		return null;
+    	}
+    }
+    
+    public void setFilePath(File file){
+    	Preferences prefs  = Preferences.userNodeForPackage(Main.class);
+    	if(file!=null){
+    		prefs.put("filePath", file.getPath());
+    	}else{
+    		prefs.remove("filePath");
+    	}
+    }
+    
+    
+    
+    public static void main(String[] args)
+    {
+        launch(args);
+    }
+}
+

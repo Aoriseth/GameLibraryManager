@@ -1,0 +1,19 @@
+import javafx.stage.Stage;
+
+
+public class SearchMove_controller {
+
+
+    private Stage dialogStage;
+    private MainMenuController parent;
+
+    public void setParent(MainMenuController parent)
+    {
+        this.parent = parent;
+    }
+
+    public void setDialogStage(Stage dialogStage)
+    {
+        this.dialogStage = dialogStage;
+    }
+}

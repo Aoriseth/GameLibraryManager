@@ -1,0 +1,144 @@
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+
+
+
+
+
+
+
+
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class ComparisonController extends Thread
+{
+	private static double xOffset = 0;
+    private static double yOffset = 0;
+    private MainMenuController parent;
+    private Stage dialogStage;
+    private final HashSet<String> libraries = new HashSet<>();
+    @FXML
+    private Pane grabBar;
+    @FXML
+    private TextField Name;
+    @FXML
+    private TableView<Compare> table;
+    @FXML
+    private TableColumn PlayerColumn;
+    @FXML
+    private TableColumn GameColumn;
+    @FXML
+    private ComboBox<String> Gamelist;
+	
+
+    public ComparisonController()
+    {}
+
+    public void setParent(MainMenuController parent)
+    {
+    	
+        this.parent = parent;
+        grabBar.setOnMousePressed(new EventHandler<MouseEvent>() {
+			@Override
+            public void handle(MouseEvent event) {
+                xOffset = dialogStage.getX() - event.getScreenX();
+                yOffset = dialogStage.getY() - event.getScreenY();
+            }
+        });
+        grabBar.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+            	dialogStage.setX(event.getScreenX() + xOffset);
+            	dialogStage.setY(event.getScreenY() + yOffset);
+            }
+        });
+        
+        PlayerColumn.setCellValueFactory(
+        	    new PropertyValueFactory<Compare,String>("name")
+        	);
+        GameColumn.setCellValueFactory(
+        	    new PropertyValueFactory<Compare,String>("gameName")
+        	);
+        ArrayList<String> games = new ArrayList<String>();
+        games.add("<<ANY>>");
+		for(Game game:parent.games){
+        	games.add(game.getGameTitle());
+        }
+        Gamelist.getItems().addAll(games);
+        Gamelist.setValue("<<ANY>>");
+        
+    }
+    public void handlehover(final MouseEvent event)
+    {
+        popUp((Node)event.getSource());
+    }
+    
+    
+    private void popUp(Node pop)
+    {
+    	 pop.toFront();
+    	 pop.setScaleX(1.1);
+    	 pop.setScaleY(1.1);
+    }
+    
+    private void popDown(Node source) {
+    	source.toFront();
+    	source.setScaleX(1);
+    	source.setScaleY(1);
+	}
+
+    public void handleUpload(){
+    	parent.uploadLibrary(Name.getText());
+    	System.out.println("test");
+    }
+    
+    
+    public void handleCompare(){
+    	ObservableList<Compare> filter = FXCollections.observableArrayList();
+    	if(Gamelist.getValue().equals("<<ANY>>")){
+	    	for(Game game:parent.games){
+	    		for(Compare test:parent.compare()){
+	    			if(test.getGameName().equals(game.getGameTitle())){
+	    				filter.add(test);
+	    			}
+	    		}
+	    	}
+    	}else{
+    		for(Compare test:parent.compare()){
+    			if(test.getGameName().equals(Gamelist.getValue())){
+    				filter.add(test);
+    			}
+    		}
+    	}
+    	table.setItems(filter);
+    }
+    
+    public void handleclick(final MouseEvent event)
+    {
+    	popDown((Node)event.getSource());
+    }
+    
+    public void handlemousexit(final MouseEvent event)
+    {
+    	popDown((Node) event.getSource());
+    }
+    
+	public void setDialogStage(Stage dialogStage)
+    {
+        this.dialogStage = dialogStage;
+    }
+}

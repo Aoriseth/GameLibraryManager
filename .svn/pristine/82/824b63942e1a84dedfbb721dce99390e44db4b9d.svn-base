@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ComparisonController">
+   <children>
+      <ImageView fitHeight="548.0" fitWidth="679.0" layoutX="67.0" layoutY="-174.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@purple.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="grabBar" layoutX="177.0" layoutY="-162.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TableView fx:id="table" layoutX="19.0" layoutY="179.0" prefHeight="355.0" prefWidth="642.0">
+        <columns>
+          <TableColumn fx:id="PlayerColumn" prefWidth="166.0" text="Player" />
+            <TableColumn fx:id="GameColumn" prefWidth="475.0" text="Game Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="429.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleCompare" prefHeight="38.0" prefWidth="230.0" text="Search" />
+      <Button layoutX="429.0" layoutY="51.0" mnemonicParsing="false" onAction="#handleUpload" prefHeight="38.0" prefWidth="230.0" text="Upload Library" />
+      <Text fill="WHITE" layoutX="42.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <TextField fx:id="Name" layoutX="152.0" layoutY="51.0" prefHeight="38.0" prefWidth="265.0" />
+      <ComboBox fx:id="Gamelist" layoutX="152.0" layoutY="115.0" prefHeight="38.0" prefWidth="265.0" />
+      <Text fill="WHITE" layoutX="39.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Title">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="MainMenuController">
+    <ImageView fx:id="background" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true"
+               AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+               AnchorPane.topAnchor="0.0">
+        <Image url="@SKINDEFAULT.jpg"/>
+    </ImageView>
+    <Button fx:id="left" graphicTextGap="0.0" layoutY="40.0" maxHeight="630.0" maxWidth="40.0" minHeight="630.0"
+            minWidth="40.0" mnemonicParsing="false" onAction="#handleleft" onMouseEntered="#handlehover"
+            onMouseExited="#handlemousexit" onMousePressed="#handleclick" opacity="0.4" prefHeight="630.0"
+            prefWidth="40.0" style="-fx-background-color: #8A0886;" text="&lt;" textFill="WHITE"
+            AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="45.0">
+        <font>
+            <Font size="50.0"/>
+        </font>
+        <effect>
+            <DropShadow/>
+        </effect>
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+        <padding>
+            <Insets left="1.0" right="1.0"/>
+        </padding>
+    </Button>
+    <Button fx:id="right" layoutX="1241.0" layoutY="42.0" maxHeight="630.0" maxWidth="40.0" minHeight="630.0"
+            minWidth="40.0" mnemonicParsing="false" onAction="#handleright" onMouseEntered="#handlehover"
+            onMouseExited="#handlemousexit" onMousePressed="#handleclick" opacity="0.4" prefHeight="630.0"
+            prefWidth="40.0" style="-fx-background-color: #8A0886;" text="&gt;" textFill="WHITE"
+            AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+        <font>
+            <Font size="50.0"/>
+        </font>
+        <effect>
+            <DropShadow/>
+        </effect>
+        <padding>
+            <Insets left="1.0" right="1.0"/>
+        </padding>
+    </Button>
+    <GridPane fx:id="list" alignment="CENTER" hgap="10.0" maxWidth="1175.0" minWidth="1175.0" vgap="10.0"
+              AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0"
+              AnchorPane.topAnchor="40.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity"
+                               percentWidth="0.0" prefWidth="230.0"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <Button fx:id="cover1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover3" alignment="CENTER" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlecover"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="310.0" prefWidth="225.0" visible="false" GridPane.columnIndex="1">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets/>
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="cover5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="2">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="3">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="311.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="4">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.rowIndex="1">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="cover8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#handlecover" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" prefHeight="310.0" prefWidth="225.0"
+                visible="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+    </GridPane>
+    <AnchorPane fx:id="overlay" layoutX="356.0" layoutY="-108.0" prefHeight="200.0" prefWidth="200.0"
+                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="-0.0">
+        <ImageView fx:id="DetailCover" fitHeight="310.0" fitWidth="230.0" pickOnBounds="true"
+                   AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="200.0">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <Image url="@../../../../../Pictures/y7YL3Or.jpg"/>
+        </ImageView>
+        <Label fx:id="Gametitle" alignment="CENTER" text="GameTitle" textAlignment="CENTER" textFill="WHITE"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font name="Impact" size="32.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <Label text="Description" textFill="WHITE" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="190.0">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <Label fx:id="Description" alignment="TOP_LEFT" maxHeight="300.0" maxWidth="400.0" minHeight="300.0"
+               minWidth="400.0"
+               text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel"
+               textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="220.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <Button fx:id="DetailsNext" layoutX="225.0" layoutY="520.0" maxWidth="80.0" minWidth="80.0"
+                mnemonicParsing="false" onAction="#handleDetailNext" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" style="-fx-background-color: #610B5E;"
+                text="Next" textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="DetailsBack" layoutX="165.0" layoutY="520.0" maxWidth="50.0" minWidth="50.0"
+                mnemonicParsing="false" onAction="#handleDetailBack" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" style="-fx-background-color: #610B5E;"
+                text="Back" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+        <Button fx:id="DetailsPrevious" layoutX="75.0" layoutY="520.0" maxWidth="80.0" minWidth="80.0"
+                mnemonicParsing="false" onAction="#handleDetailPrevious" onMouseEntered="#handlehover"
+                onMouseExited="#handlemousexit" onMousePressed="#handleclick" style="-fx-background-color: #610B5E;"
+                text="Previous" textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="DetailEdit" layoutX="75.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleDetailEdit"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #610B5E;" text="Edit Data"
+                textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="DetailsRemove" layoutX="225.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleDetailRemove"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #610B5E;" text="Remove"
+                textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Label layoutX="804.0" layoutY="220.0" text="Target Location:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <Label layoutX="804.0" layoutY="310.0" text="Save Location:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <TextField fx:id="Target" disable="true" layoutX="804.0" layoutY="250.0" maxWidth="300.0" minWidth="300.0"/>
+        <TextField fx:id="SaveLocation" disable="true" layoutX="804.0" layoutY="340.0" maxWidth="300.0"
+                   minWidth="300.0"/>
+        <Button fx:id="GoTarget" layoutX="1116.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoTarget"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: #610B5E;" text="Go"
+                textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="GoSaveLocation" layoutX="1116.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoSaveLocation"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: #610B5E;" text="Go"
+                textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <TextArea fx:id="EditDeck" layoutX="350.0" layoutY="225.0" maxHeight="300.0" maxWidth="400.0"
+                  minHeight="300.0" minWidth="400.0" prefHeight="200.0" prefWidth="200.0" wrapText="true"/>
+        <TextField fx:id="EditGameTitle" alignment="CENTER" layoutX="390.0" layoutY="48.0" maxWidth="500.0"
+                   minWidth="500.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="EditImageURL" layoutX="463.0" layoutY="543.0" prefHeight="31.0" prefWidth="287.0"/>
+        <Label fx:id="size" text="Size: " textFill="WHITE" AnchorPane.bottomAnchor="315.0"
+               AnchorPane.leftAnchor="940.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="380.0">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+            <padding>
+                <Insets top="-3.0"/>
+            </padding>
+        </Label>
+        <Label fx:id="ImageURL" layoutX="350.0" layoutY="544.0" text="Image URL:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <Button fx:id="LaunchGames" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLaunchGame"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #610B5E;" text="Launch Game"
+                textFill="WHITE" AnchorPane.bottomAnchor="315.0" AnchorPane.leftAnchor="805.0"
+                AnchorPane.topAnchor="380.0">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="DetailsRefresh" layoutX="164.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleDetailsRefresh"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #610B5E;" text="Refresh"
+                textFill="#fcfcfc">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+            <padding>
+                <Insets left="1.0" right="1.0"/>
+            </padding>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Button>
+    </AnchorPane>
+    <Label fx:id="pagenumber" alignment="CENTER" layoutX="620.0" layoutY="10.0" text="Page#" textAlignment="CENTER"
+           textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+        <font>
+            <Font size="20.0"/>
+        </font>
+        <effect>
+            <DropShadow/>
+        </effect>
+    </Label>
+    <Button fx:id="close" contentDisplay="CENTER" layoutX="1216.0" layoutY="14.0" maxHeight="30.0" maxWidth="30.0"
+            minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#handleclose"
+            onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+            prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #610B5E;" text="X" textAlignment="CENTER"
+            textFill="WHITE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+        <effect>
+            <DropShadow/>
+        </effect>
+        <padding>
+            <Insets left="1.0" right="1.0"/>
+        </padding>
+    </Button>
+    <Button fx:id="minimize" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="1179.0"
+            layoutY="14.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false"
+            onAction="#handleminimize" onMouseEntered="#handlehover" onMouseExited="#handlemousexit"
+            onMousePressed="#handleclick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #610B5E;"
+            text="-" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="5.0">
+        <font>
+            <Font name="System Bold" size="26.0"/>
+        </font>
+        <effect>
+            <DropShadow/>
+        </effect>
+        <padding>
+            <Insets bottom="5.0" left="1.0" right="1.0" top="-6.0"/>
+        </padding>
+    </Button>
+    <MenuButton fx:id="options" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="1152.0"
+                layoutY="5.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false"
+                onMouseEntered="#handlehover" onMouseExited="#handlemousexit" onMousePressed="#handleclick"
+                onMouseReleased="#handlerelease" prefHeight="30.0" prefWidth="30.0"
+                style="-fx-background-color: #610B5E; -fx-mark-color: white;" textFill="WHITE"
+                AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="5.0">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleUpload" text="Compare"/>
+            <MenuItem mnemonicParsing="false" onAction="#handlecleanup" text="Clean Up"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleSearch" text="Search"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleSettings" text="Settings"/>
+            <MenuItem mnemonicParsing="false" onAction="#handleRandom" text="Random"/>
+        </items>
+        <effect>
+            <DropShadow/>
+        </effect>
+        <font>
+            <Font name="System Bold" size="16.0"/>
+        </font>
+        <padding>
+            <Insets right="-2.0"/>
+        </padding>
+    </MenuButton>
+    <Slider fx:id="page" layoutX="568.0" layoutY="682.0" majorTickUnit="1.0" max="0.0" minorTickCount="0"
+            showTickMarks="true" snapToTicks="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="80.0"
+            AnchorPane.rightAnchor="80.0">
+        <effect>
+            <ColorAdjust brightness="-0.59" contrast="0.1" hue="-0.27" saturation="0.79">
+                <input>
+                    <DropShadow/>
+                </input>
+            </ColorAdjust>
+        </effect>
+    </Slider>
+</AnchorPane>

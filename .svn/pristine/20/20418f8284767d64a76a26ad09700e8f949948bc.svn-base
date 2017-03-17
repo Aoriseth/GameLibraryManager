@@ -1,0 +1,67 @@
+/**
+ * Created by Thomas_Meyers on 13/11/2014.
+ * Detects the games in a given directory
+ */
+
+
+import java.io.File;
+import java.util.*;
+
+import javafx.application.Platform;
+
+public class GameScanner {
+    String directory;
+    String[] directories;
+    ArrayList<Game> Games = new ArrayList<Game>();
+    SetupController controller;
+    private MainMenuController parent;
+    float progress;
+    String lastGame;
+
+    public GameScanner(String directory, SetupController controller, MainMenuController parent) //Constructor
+    {
+        this.parent = parent;
+        this.controller = controller;
+        this.directory = directory;
+        ScanDirectory();
+        Gameinfo();
+    }
+
+    private void ScanDirectory() //Maakt een array met de namen van alle bestanden en mappen in de opgegeven directory
+    {
+        File file = new File(directory);
+
+        directories = file.list();
+    }
+
+    private void Gameinfo() {
+        for (int i = 0; i < directories.length; i++) {
+
+            File f = new File(directory + directories[i]);
+
+            if(f.isDirectory())
+            {
+                String temp = directory + directories[i];
+                directories[i] = directories[i].replace(' ', '.');
+
+                if(parent.newgame(directories[i]))
+                {
+                    Games.add(new Game(directories[i],temp));
+                    lastGame = directories[i];
+                    Platform.runLater(() -> controller.SetGame(Games.get(Games.size() - 1).getGameTitle()));
+                }
+
+            }
+            progress = ((i + 1) * 100) / directories.length;
+            controller.SetProgress(progress);
+            
+            
+        }
+        Platform.runLater(()->controller.SetGame("Scan Complete"));
+    }
+
+    public ArrayList<Game> getGames()
+    {
+        return Games;
+    }
+}

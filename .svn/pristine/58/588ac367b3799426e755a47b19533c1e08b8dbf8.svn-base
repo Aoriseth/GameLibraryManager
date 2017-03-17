@@ -1,0 +1,77 @@
+import javafx.fxml.FXML;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+/**
+ * Created by Thomas_Meyers on 13/11/2014.
+ */
+public class MainMenuController {
+
+    @FXML
+    private ImageView cover1;
+    @FXML
+    private ImageView cover2;
+    @FXML
+    private ImageView cover3;
+    @FXML
+    private ImageView cover4;
+    @FXML
+    private ImageView cover5;
+    @FXML
+    private ImageView cover6;
+    @FXML
+    private ImageView cover7;
+    @FXML
+    private ImageView cover8;
+    @FXML
+    private ImageView cover9;
+    @FXML
+    private ImageView cover10;
+
+    Main mainApp;
+
+    public void setImages(Image[] cover)
+    {
+        for(int i = 0; i<cover.length; i++)
+        {
+            switch(i)
+            {
+                case 0: cover1.setImage(cover[i]);
+                    break;
+                case 1: cover2.setImage(cover[i]);
+                    break;
+                case 2: cover3.setImage(cover[i]);
+                    break;
+                case 3: cover4.setImage(cover[i]);
+                    break;
+                case 4: cover5.setImage(cover[i]);
+                    break;
+                case 5: cover6.setImage(cover[i]);
+                    break;
+                case 6: cover7.setImage(cover[i]);
+                    break;
+                case 7: cover8.setImage(cover[i]);
+                    break;
+                case 8: cover9.setImage(cover[i]);
+                    break;
+                case 9: cover10.setImage(cover[i]);
+                    break;
+                default: break;
+            }
+
+        }
+
+    }
+
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
+
+    public MainMenuController()
+    {
+    }
+
+
+
+
+}
